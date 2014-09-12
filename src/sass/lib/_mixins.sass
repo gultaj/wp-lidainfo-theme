@@ -1,0 +1,16 @@
+=clr
+    &:after
+        content: " "
+        display: table
+        clear: both
+    *zoom: 1
+
+=make-icon-h($icon)
+    .icon-#{$icon}
+        +si(#{$icon})
+        &:hover
+            +si(#{$icon}-hover)
+
+=make-icon($icon)
+    .icon-#{$icon}
+        +si(#{$icon})
