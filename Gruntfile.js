@@ -43,11 +43,18 @@ module.exports = function(grunt) {
 				]
 			}
 		},
-		clean: ['production']
+		clean: ['production/**/*'],
+		cssmin: {
+			build: {
+				files: [
+					{expand: true, src: ['*.css', '!*.min.css'], cwd: 'production/css/', dest: 'production/css/', ext: '.min.css'}
+				]
+			}
+		}
 	});
 
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
 	grunt.registerTask('default', ['compass', 'connect', 'watch']);
-	grunt.registerTask('build', ['clean', 'copy']);
+	grunt.registerTask('build', ['clean', 'copy', 'cssmin']);
 };

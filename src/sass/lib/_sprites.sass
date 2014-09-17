@@ -29,5 +29,9 @@ $icons: sprite-map("sprites/*.png", $spacing: 10px)
     height: #{$height}px
     display: inline-block
 
+=sprite-size($sprite, $map: $icons)
+    +image-size(sprite-file($map, $sprite)) 
+
 =sprite-bkg($map: $icons)
     background: sprite-url($map) no-repeat
+        
