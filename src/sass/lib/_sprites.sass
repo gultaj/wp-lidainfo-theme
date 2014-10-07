@@ -1,5 +1,5 @@
 //  sprites with padding
-$icons: sprite-map("sprites/*.png", $spacing: 10px)
+$icons: sprite-map("sprite/*.png", $spacing: 10px)
 // sized sprites
 =image-size($path)
     width: image-width($path)
@@ -29,7 +29,8 @@ $icons: sprite-map("sprites/*.png", $spacing: 10px)
     height: #{$height}px
     display: inline-block
 
-=sprite-size($sprite, $map: $icons)
+=ss($sprite, $map: $icons)
+    +si($sprite, $map)
     +image-size(sprite-file($map, $sprite)) 
 
 =sprite-bkg($map: $icons)

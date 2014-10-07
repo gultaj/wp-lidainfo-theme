@@ -3,31 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document Title</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Bold:700|Open+Sans+Condensed:700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/screen.css">
 </head>
 <body>
 	<div class="out">
 		<!-- begin header -->
 		<header class="header">
-			<a href="/" class="header__logo">lida.info</a>
-			<a href="#" class="header__banner"><img src="" class="banner__img" alt=""></a>
+			<div class="header__top">
+				<a href="/" class="header__logo">информационный сайт города Лиды</a>
+				<a href="#" class="header__banner"><img src="http://www.lida.info/wp-content/uploads/ban/n-dom.gif" class="banner__img" alt=""></a>
+			</div>
 			<nav class="header__nav">
 				<ul class="nav_inline">
-					<li><a href="/"><i class="icon _home"></i></a></li>
+					<li class="is-active"><a href="/"><i class="icon _home"></i>Главная</a></li>
 					<li><a href="#">Форум</a></li>
 					<li><a href="#">Расписание</a></li>
 					<li><a href="#">Афиша</a></li>
 					<li><a href="#">Объявления</a></li>
 					<li><a href="#">Работа</a></li>
 					<li><a href="#">Контакт</a></li>
-					<li class="_left"><a href="#">Курсы</a></li>
-					<li class="_left"><a href="#">Погода</a></li>
+					<li class="_right"><a href="#">Погода</a></li>
+					<li class="_right"><a href="#">Курсы</a></li>
 				</ul>
 			</nav>
 			<nav class="header__nav_category">
 				<ul class="nav_inline">
-					<li>Рубрики</li>
+					<li>Рубрики:</li>
 					<li><a href="">Экономика и финансы</a></li>
 					<li><a href="">Происшествия</a></li>
 					<li><a href="">Политика</a></li>
@@ -37,7 +39,16 @@
 					<li><a href="">Калейдоскоп</a></li>
 					<li><a href="">Юмор</a></li>
 				</ul>
+				<div class="header__subscribe">
+					<a href="#" class="subscribe _feed">feed</a>
+					<a href="#" class="subscribe _email">email</a>
+					<a href="#" class="subscribe _twitter">tw</a>
+					<a href="#" class="subscribe _vk">vk</a>
+					<a href="#" class="subscribe _fb">fb</a>
+				</div>
+				<div class="header__search">Поиск</div>
 			</nav>
+
 		</header>
 		<!-- end header -->
 		<!-- begin content -->
@@ -49,7 +60,7 @@
 					<div class="entry__meta"></div>
 					<img src="http://www.lida.info/pod-lidoj-razbilsya-shturmovik-su-25/" alt="" class="entry__img">
 					<header class="entry__title">
-						<a class="entry__link">Под Лидой разбился штурмовик СУ-25</a>
+						<a href="#" class="entry__link">Под Лидой разбился штурмовик СУ-25</a>
 						<a href="" class="entry__link_comment"><i class="icon _comment"></i></a>
 					</header>
 					<p class="entry__excerpt">Сегодня днем в Лидском районе разбился военный самолет Су-25. Как сообщили в Министерстве обороны, пострадавших и разрушений нет. 30 сентября 2014 года при проведении плановых полетов при выполнении упражнения (полет в зоне) около 11.50 самолет Су-25 116 штурмовой авиационной базы ВВС и войск ПВО в результате нештатной ситуации потерял управление. Летчик, убедившись, что траектория падения […]
