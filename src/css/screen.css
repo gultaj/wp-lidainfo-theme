@@ -61,9 +61,10 @@ a { text-decoration: none; }
 
 .header__search { float: right; }
 
-.l .col-1-4, .l .col-1-2 { float: left; }
+.l .c-1-4, .l .c-1-2, .l .c-1 { float: left; padding-left: 15px; padding-right: 15px; }
 
-.l { *zoom: 1; }
+.l { *zoom: 1; margin-left: -15px; margin-right: -15px; }
 .l:after, .l:before { content: " "; display: table; clear: both; }
-.l .col-1-4 { width: 25%; }
-.l .col-1-2 { width: 50%; }
+.l .c-1-4 { width: 25%; }
+.l .c-1-2 { width: 50%; }
+.l .c-1 { width: 100%; }
