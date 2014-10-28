@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document Title</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Bold:700|Open+Sans+Condensed:700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Open+Sans+Condensed:700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/screen.css">
 </head>
 <body>
@@ -40,13 +40,16 @@
 					<li><a href="">Юмор</a></li>
 				</ul>
 				<div class="header__subscribe">
-					<a href="#" class="subscribe _feed">feed</a>
-					<a href="#" class="subscribe _email">email</a>
-					<a href="#" class="subscribe _twitter">tw</a>
-					<a href="#" class="subscribe _vk">vk</a>
-					<a href="#" class="subscribe _fb">fb</a>
+					<a href="#" class="subscribe _rss"></a>
+					<a href="#" class="subscribe _email"></a>
+					<a href="#" class="subscribe _tw"></a>
+					<a href="#" class="subscribe _vk"></a>
+					<a href="#" class="subscribe _fb"></a>
 				</div>
-				<div class="header__search">Поиск</div>
+				<div class="header__search">
+					<input type="search" class="input_search">
+					<a href="#" class="icon _search"></a>
+				</div>
 			</nav>
 
 		</header>
@@ -57,75 +60,99 @@
 			<section class="main c-1-2">
 				<h2 class="section__title">Новости</h2>
 				<article class="content__entry">
-					<div class="entry__meta"></div>
-					<img src="http://www.lida.info/pod-lidoj-razbilsya-shturmovik-su-25/" alt="" class="entry__img">
+					<div class="entry__meta">
+						<time class="entry__meta_time" datetime="2001-05-15 19:00">7:00, 20 Октябрь 2014</time>
+						<hr class="entry__meta_div">
+						<span class="entry__meta_category">Культура</span>
+					</div>
+					<a class="entry__link_thumb" href="#"><img src="img/img.jpg" alt="" class="entry__img"></a>
 					<header class="entry__title">
-						<a class="entry__link">Под Лидой разбился штурмовик СУ-25</a>
-						<a href="" class="entry__link_comment"><i class="icon _comment"></i></a>
+						<a href="#" class="entry__link">Под Лидой разбился штурмовик СУ-25</a>
+						<a href="" class="entry__link_comment">22</a>
 					</header>
 					<p class="entry__excerpt">Сегодня днем в Лидском районе разбился военный самолет Су-25. Как сообщили в Министерстве обороны, пострадавших и разрушений нет. 30 сентября 2014 года при проведении плановых полетов при выполнении упражнения (полет в зоне) около 11.50 самолет Су-25 116 штурмовой авиационной базы ВВС и войск ПВО в результате нештатной ситуации потерял управление. Летчик, убедившись, что траектория падения […]
-					<a href="#" class="entry__link_more">Далее</a></p>
+					<a href="#" class="entry__link_more">Далее &raquo;</a></p>
 				</article>
 				<article class="content__entry">
-					<div class="entry__meta"></div>
-					<img src="http://www.lida.info/pod-lidoj-razbilsya-shturmovik-su-25/" alt="" class="entry__img">
+					<div class="entry__meta">
+						<time class="entry__meta_time" datetime="2001-05-15 19:00">7:00, 20 Октябрь 2014</time>
+						<hr class="entry__meta_div">
+						<span class="entry__meta_category">Культура</span>
+					</div>
+					<a class="entry__link_thumb" href="#"><img src="img/img.jpg" alt="" class="entry__img"></a>
 					<header class="entry__title">
-						<a class="entry__link">Под Лидой разбился штурмовик СУ-25</a>
-						<a href="" class="entry__link_comment"><i class="icon _comment"></i></a>
+						<a href="#" class="entry__link">Под Лидой разбился штурмовик СУ-25</a>
+						<a href="" class="entry__link_comment">15</a>
 					</header>
 					<p class="entry__excerpt">Сегодня днем в Лидском районе разбился военный самолет Су-25. Как сообщили в Министерстве обороны, пострадавших и разрушений нет. 30 сентября 2014 года при проведении плановых полетов при выполнении упражнения (полет в зоне) около 11.50 самолет Су-25 116 штурмовой авиационной базы ВВС и войск ПВО в результате нештатной ситуации потерял управление. Летчик, убедившись, что траектория падения […]
-					<a href="#" class="entry__link_more">Далее</a></p>
+					<a href="#" class="entry__link_more">Далее &raquo;</a></p>
 				</article>
 				<article class="content__entry">
-					<div class="entry__meta"></div>
-					<img src="http://www.lida.info/pod-lidoj-razbilsya-shturmovik-su-25/" alt="" class="entry__img">
+					<div class="entry__meta">
+						<time class="entry__meta_time" datetime="2001-05-15 19:00">7:00, 20 Октябрь 2014</time>
+						<hr class="entry__meta_div">
+						<span class="entry__meta_category">Культура</span>
+					</div>
+					<a class="entry__link_thumb" href="#"><img src="img/img.jpg" alt="" class="entry__img"></a>
 					<header class="entry__title">
-						<a class="entry__link">Под Лидой разбился штурмовик СУ-25</a>
-						<a href="" class="entry__link_comment"><i class="icon _comment"></i></a>
+						<a href="#" class="entry__link">Под Лидой разбился штурмовик СУ-25</a>
+						<a href="" class="entry__link_comment">8</a>
 					</header>
 					<p class="entry__excerpt">Сегодня днем в Лидском районе разбился военный самолет Су-25. Как сообщили в Министерстве обороны, пострадавших и разрушений нет. 30 сентября 2014 года при проведении плановых полетов при выполнении упражнения (полет в зоне) около 11.50 самолет Су-25 116 штурмовой авиационной базы ВВС и войск ПВО в результате нештатной ситуации потерял управление. Летчик, убедившись, что траектория падения […]
-					<a href="#" class="entry__link_more">Далее</a></p>
+					<a href="#" class="entry__link_more">Далее &raquo;</a></p>
 				</article>
 				<article class="content__entry">
-					<div class="entry__meta"></div>
-					<img src="http://www.lida.info/pod-lidoj-razbilsya-shturmovik-su-25/" alt="" class="entry__img">
+					<div class="entry__meta">
+						<time class="entry__meta_time" datetime="2001-05-15 19:00">7:00, 20 Октябрь 2014</time>
+						<hr class="entry__meta_div">
+						<span class="entry__meta_category">Культура</span>
+					</div>
+					<a class="entry__link_thumb" href="#"><img src="img/img.jpg" alt="" class="entry__img"></a>
 					<header class="entry__title">
-						<a class="entry__link">Под Лидой разбился штурмовик СУ-25</a>
-						<a href="" class="entry__link_comment"><i class="icon _comment"></i></a>
+						<a href="#" class="entry__link">Под Лидой разбился штурмовик СУ-25</a>
+						<a href="" class="entry__link_comment">1</a>
 					</header>
 					<p class="entry__excerpt">Сегодня днем в Лидском районе разбился военный самолет Су-25. Как сообщили в Министерстве обороны, пострадавших и разрушений нет. 30 сентября 2014 года при проведении плановых полетов при выполнении упражнения (полет в зоне) около 11.50 самолет Су-25 116 штурмовой авиационной базы ВВС и войск ПВО в результате нештатной ситуации потерял управление. Летчик, убедившись, что траектория падения […]
-					<a href="#" class="entry__link_more">Далее</a></p>
+					<a href="#" class="entry__link_more">Далее &raquo;</a></p>
 				</article>
 				<article class="content__entry">
-					<div class="entry__meta"></div>
-					<img src="http://www.lida.info/pod-lidoj-razbilsya-shturmovik-su-25/" alt="" class="entry__img">
+					<div class="entry__meta">
+						<time class="entry__meta_time" datetime="2001-05-15 19:00">7:00, 20 Октябрь 2014</time>
+						<hr class="entry__meta_div">
+						<span class="entry__meta_category">Культура</span>
+					</div>
+					<a class="entry__link_thumb" href="#"><img src="img/img.jpg" alt="" class="entry__img"></a>
 					<header class="entry__title">
-						<a class="entry__link">Под Лидой разбился штурмовик СУ-25</a>
-						<a href="" class="entry__link_comment"><i class="icon _comment"></i></a>
+						<a href="#" class="entry__link">Под Лидой разбился штурмовик СУ-25</a>
+						<a href="" class="entry__link_comment">4</a>
 					</header>
 					<p class="entry__excerpt">Сегодня днем в Лидском районе разбился военный самолет Су-25. Как сообщили в Министерстве обороны, пострадавших и разрушений нет. 30 сентября 2014 года при проведении плановых полетов при выполнении упражнения (полет в зоне) около 11.50 самолет Су-25 116 штурмовой авиационной базы ВВС и войск ПВО в результате нештатной ситуации потерял управление. Летчик, убедившись, что траектория падения […]
-					<a href="#" class="entry__link_more">Далее</a></p>
+					<a href="#" class="entry__link_more">Далее &raquo;</a></p>
 				</article>
 				<article class="content__entry">
-					<div class="entry__meta"></div>
-					<img src="http://www.lida.info/pod-lidoj-razbilsya-shturmovik-su-25/" alt="" class="entry__img">
+					<div class="entry__meta">
+						<time class="entry__meta_time" datetime="2001-05-15 19:00">7:00, 20 Октябрь 2014</time>
+						<hr class="entry__meta_div">
+						<span class="entry__meta_category">Культура</span>
+					</div>
+					<a class="entry__link_thumb" href="#"><img src="img/img.jpg" alt="" class="entry__img"></a>
 					<header class="entry__title">
-						<a class="entry__link">Под Лидой разбился штурмовик СУ-25</a>
-						<a href="" class="entry__link_comment"><i class="icon _comment"></i></a>
+						<a href="#" class="entry__link">Под Лидой разбился штурмовик СУ-25</a>
+						<a href="" class="entry__link_comment">3</a>
 					</header>
 					<p class="entry__excerpt">Сегодня днем в Лидском районе разбился военный самолет Су-25. Как сообщили в Министерстве обороны, пострадавших и разрушений нет. 30 сентября 2014 года при проведении плановых полетов при выполнении упражнения (полет в зоне) около 11.50 самолет Су-25 116 штурмовой авиационной базы ВВС и войск ПВО в результате нештатной ситуации потерял управление. Летчик, убедившись, что траектория падения […]
-					<a href="#" class="entry__link_more">Далее</a></p>
+					<a href="#" class="entry__link_more">Далее &raquo;</a></p>
 				</article>
 				<nav class="content__pagination">
 					<ul class="nav_inline">
-						<li class="is-active">1</li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li>...</li>
-						<li><a href="#">381</a></li>
-						<li><a href="#">>></a></li>
+						<li class="is-active"><span class="page current">1</span></li>
+						<li><a class="page" href="#">2</a></li>
+						<li><a class="page" href="#">3</a></li>
+						<li><a class="page" href="#">4</a></li>
+						<li><a class="page" href="#">5</a></li>
+						<li><span class="page">...</span></li>
+						<li><a class="page" href="#">381</a></li>
+						<li><a class="page" href="#">&raquo;</a></li>
 					</ul>
 				</nav>
 			</section>
@@ -152,7 +179,7 @@
 				<section class="widget recent__notices">
 					<header class="widget__header">
 						<h2 class="widget__title">Последние объявления</h2>
-						<a href="#" class="widget__link_all">Все >></a>
+						<a href="#" class="widget__link_all">Все &raquo;</a>
 					</header>
 					<ul class="widget__list">
 						<li>
@@ -239,7 +266,7 @@
 				<section class="widget recent__topics">
 					<header class="widget__header">
 						<h2 class="widget__title">Последние темы на форуме</h2>
-						<a href="#" class="widget__link_all">Все >></a>
+						<a href="#" class="widget__link_all">Все &raquo;</a>
 					</header>
 					<ul class="widget__list">
 						<li><a href="" class="topic__title">Шифер б/у. 15т/лист.</a> автор <p>Nikomas</p> в 2:01 в разделе Продам
@@ -310,7 +337,7 @@
 				<section class="widget afisha">
 					<header class="widget__header">
 						<h2 class="widget__title">Афиша</h2>
-						<a href="#" class="widget__link_all">Все >></a>
+						<a href="#" class="widget__link_all">Все &raquo;</a>
 					</header>
 					<ul class="widget__list _inline l">	
 						<li class="afisha__event c-1-4">

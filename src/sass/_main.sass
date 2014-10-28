@@ -1,0 +1,93 @@
+.content__entry
+	@extend %clear
+	margin-bottom: 10px
+
+.section__title
+	@extend %title
+
+.entry__link_thumb
+	float: left
+	margin-right: 10px
+	margin-bottom: 5px
+
+.entry__title
+	.entry__link
+		@extend %bold
+		color: black
+		font-weight: bold
+		&:hover
+			color: $hover
+.entry__link_more
+	color: $base
+	float: right
+.entry__excerpt
+	font-size: 12px
+
+%inline
+	display: inline-block
+	position: absolute
+
+.entry__meta
+	@extend %clear
+	position: relative
+	font-size: 10px
+	height: 18px
+	color: silver
+	margin-bottom: 5px
+	&_time,
+		@extend %inline
+		left: 0
+		top: 0
+		background-color: white
+		z-index: 1
+		padding-right: 3px
+	&_div,
+		@extend %inline
+		background-color: $l_gray
+		width: 100%
+		height: 1px
+		border: 0
+		margin: 0
+		top: 50%
+	&_category
+		@extend %inline
+		right: 0
+		top: 0
+		background-color: white
+		padding-left: 3px
+%page
+	border: 1px solid $l_gray
+	padding: 5px 11px
+	float: left
+	margin-left: -1px
+	color: black
+.content__pagination
+	text-align: center
+	padding-top: 15px
+	border-top: 1px solid $l_gray
+	.nav_inline
+		display: inline-block
+	.page
+		@extend %page
+		&:hover
+			background-color: $l_gray
+	.current
+		color: white
+		background-color: $base
+		border-color: $base
+		margin-left: 0
+		z-index: 2
+		position: relative
+		cursor: default
+		&:hover
+			background-color: $base
+
+.entry__link_comment
+	@extend %icon
+	+ss(message)
+	vertical-align: top
+	text-align: center
+	line-height: 15px
+	font-size: 10px
+	color: white
+	margin-left: 5px

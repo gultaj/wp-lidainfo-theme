@@ -11,7 +11,8 @@ $icons: sprite-map("sprite/*.png", $spacing: 10px)
 
 //shortcut
 =s($sprite, $map: $icons)
-    background: sprite($map, $sprite)
+    background-image: sprite-url($map)
+    background-repeat: no-repeat
     //background-image: inline-image('icons/'+$sprite+'.png','image/png') to switches sprites to base64, elegant
     +image-size(sprite-file($map, $sprite))
 
@@ -34,5 +35,6 @@ $icons: sprite-map("sprite/*.png", $spacing: 10px)
     +image-size(sprite-file($map, $sprite)) 
 
 =sprite-bkg($map: $icons)
-    background: sprite-url($map) no-repeat
+    background-image: sprite-url($map)
+    background-repeat: no-repeat
         

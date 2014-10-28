@@ -1,14 +1,26 @@
 %cond
-    font-family: "Open Sans Condensed", "Open Sans", Arial, sans-serif
+	font-family: "Open Sans Condensed", "Open Sans", Arial, sans-serif
 
 %bold
-    font-family: "Open Sans Bold", "Open Sans", Arial, sans-serif
+	font-family: "Open Sans Bold", "Open Sans", Arial, sans-serif
 
 %sprite
-    +sprite-bkg()
+	+sprite-bkg()
 
 %clear
-    +clr()
+	+clr()
 
 $base: #009ee7
 $hover: #dd0000
+$l_gray: #E0E0E0
+
+%icon
+	+sprite-bkg()
+	display: inline-block
+
+%title
+	@extend %cond
+	border-bottom: 2px solid black
+	padding-bottom: 3px
+	margin-bottom: 5px
+	font-size: 18px

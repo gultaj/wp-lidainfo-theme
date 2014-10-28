@@ -1,6 +1,7 @@
-var lrserver = require('tiny-lr')();
-lrserver.listen(9001, function(err) { console.log('LR Server Started'); });
-lrserver.changed({body:{}});
+// var lrserver = require('tiny-lr');
+// var port = process.env.LR_PORT || process.env.PORT || 9009;
+// lrserver().listen(port, function(err) { console.log('LR Server Started'); });
+// lrserver().changed({body:{}});
 
 module.exports = function(grunt) {
 	grunt.initConfig({
@@ -18,7 +19,8 @@ module.exports = function(grunt) {
 					base: 'src/',
 					hostname: "localhost",
 					livereload: true,
-					open: true
+					open: true,
+					// keepalive: true
 				}
 			}
 		},
@@ -30,9 +32,10 @@ module.exports = function(grunt) {
 			livereload: {
 				files: ['src/css/*.css', 'src/*.html'],
 				options: {
-					livereload: true,
-					debounceDelay: 250
-				}
+					livereload: true
+				},
+				// tasks: ['connect']
+				// auto: false
 			}
 		},
 		copy: {

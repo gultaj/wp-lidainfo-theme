@@ -44,6 +44,8 @@
 		float: left
 		li
 			padding: 0 5px
+			&:first-child
+				padding-left: 0
 			a
 				color: #7a7a7a
 				&:hover
@@ -53,3 +55,36 @@
 	float: right
 .header__search
 	float: right
+	margin-right: 20px
+	
+	.input_search
+		width: 0px
+		border-bottom: 1px solid #aebac8
+		padding-top: 4px
+		vertical-align: top
+		-webkit-transition: width .2s
+		transition: width .2s
+		&:hover,&:focus
+			width: 150px
+	&:hover>.input_search
+		width: 150px
+
+.icon
+	@extend %icon
+	@each $icon in search
+		&._#{$icon}
+			+ss($icon)
+
+
+.subscribe
+	@extend %icon
+	background-color: #aebac8
+	-webkit-transition: background-color .2s
+	transition: background-color .2s
+	border-radius: 50%
+	margin-right: 2px
+	&:hover
+		background-color: $base
+	@each $icon in tw, fb, email, rss, vk
+		&._#{$icon}
+			+ss($icon)
