@@ -3,8 +3,8 @@
 .header__top
 	@extend %clear
 .header__logo
-	@extend %sprite
-	+ss(logo)
+	@extend %logo_s
+	+ss(logo, $logo_map)
 	float: left
 	// padding-top: 70px
 	// color: #000
@@ -15,6 +15,7 @@
 .header__banner
 	float: right
 	margin-top: 5px
+
 .header__nav
 	@extend %clear, %cond
 	display: block
@@ -73,7 +74,7 @@
 	@extend %icon
 	@each $icon in search
 		&._#{$icon}
-			+ss($icon)
+			+ss($icon, $icons_map)
 
 
 .subscribe
@@ -87,4 +88,4 @@
 		background-color: $base
 	@each $icon in tw, fb, email, rss, vk
 		&._#{$icon}
-			+ss($icon)
+			+ss($icon, $icons_map)

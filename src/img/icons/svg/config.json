@@ -1,0 +1,9 @@
+{
+    "defaultColor": "#009ee7",
+    "defaults": {
+    	"bus3": {
+	    	"width": "20",
+	    	"height": "20"
+    	}
+    }
+}

@@ -1,6 +1,19 @@
+%notice
+	font-size: 12px
+	color: darken(#fff, 30)
 .widget
 	margin-bottom: 10px
-
+	h3
+		font-size: 13px
+		color: black
+		font-weight: 500
+		&:hover
+			color: $hover
+	.notice__category
+		@extend %notice
+	.notice__date
+		@extend %notice
+		float: right
 .widget__header
 	@extend %title, %clear
 	.widget__title
@@ -9,3 +22,34 @@
 .widget__link_all
 	float: right
 	font-size: 14px
+	color: $base
+	&:hover
+		color: $hover
+.widget__item
+	border-bottom: 1px solid $l_gray
+	margin-top: 3px
+	&:first-child
+		margin-top: 0
+
+@each $icon in news, notes, bus
+	._#{$icon}
+		+ss($icon, $icons_map)
+
+._bus
+	vertical-align: top
+	margin-top: -2px
+._news
+	background: url('../img/icons/news.svg') no-repeat 0 0
+	+background-size(20px 20px)
+	// background-image: inline-image('svg/#{$name}.svg','image/svg')
+	width: 20px
+	height: 20px
+	display: inline-block
+	color: $base
+._bus
+	background: url('../img/icons/bus.svg') no-repeat 0 0
+	+background-size(20px 20px)
+	width: 20px
+	height: 20px
+	display: inline-block
+	fill: $base

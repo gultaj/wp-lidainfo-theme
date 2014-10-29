@@ -14,7 +14,7 @@
 	.entry__link
 		@extend %bold
 		color: black
-		font-weight: bold
+		font-weight: 700
 		&:hover
 			color: $hover
 .entry__link_more
@@ -55,12 +55,17 @@
 		top: 0
 		background-color: white
 		padding-left: 3px
+		a
+			color: silver
+			&:hover
+				color: $base
 %page
 	border: 1px solid $l_gray
 	padding: 5px 11px
 	float: left
 	margin-left: -1px
 	color: black
+	margin-bottom: 20px
 .content__pagination
 	text-align: center
 	padding-top: 15px
@@ -84,7 +89,7 @@
 
 .entry__link_comment
 	@extend %icon
-	+ss(message)
+	+ss(message, $icons_map)
 	vertical-align: top
 	text-align: center
 	line-height: 15px

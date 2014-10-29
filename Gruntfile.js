@@ -53,7 +53,40 @@ module.exports = function(grunt) {
 					{expand: true, src: ['*.css', '!*.min.css'], cwd: 'production/css/', dest: 'production/css/', ext: '.min.css'}
 				]
 			}
-		}
+		},
+		svgmin: { //minimize SVG files
+            options: {
+                plugins: [
+                    { removeViewBox: false },
+                    { removeUselessStrokeAndFill: false }
+                ]
+            },
+            dist: {
+                expand: true,
+                cwd: 'src/img/icons/svg',
+                src: ['*.svg'],
+                dest: 'src/img/icons/svg',
+            }
+        },
+        svg_modify: {
+        	change: {
+        		// cwd: 'src/img/icons/',
+        		src: 'src/img/icons/svg/',
+        		dest: 'src/img/icons/mod/'
+        	}
+        },
+
+        svgzr: {
+	        dist: {
+	            options: {
+	                files: {
+	                    cwdSvg: 'src/img/icons/mod/undefined',
+	                    cwdPng: "src/img/icons/png"
+	                },
+	                png: true
+	            }
+	        }
+	    }
 	});
 
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
