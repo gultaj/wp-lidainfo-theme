@@ -1,0 +1,53 @@
+.entry__link_comment
+	+svg-s(comment, 20,20)
+	vertical-align: middle
+	text-align: center
+	line-height: 16px
+	font-size: 10px
+	color: white
+	margin-left: 5px
+	@extend %icon
+
+.icon
+	@extend %icon
+.link_bus
+	+svg(bus, 20,20)
+	width: 20px
+	padding-left: 25px
+	background-size: contain
+
+._search
+	+svg-s(search, 20, 20)
+	margin-top: 3px
+.subscribe
+	@extend %icon
+	padding: 3px
+	width: 24px
+	height: 24px
+
+@each $icon in tw, fb, vk
+	._#{$icon}
+		+svg($icon, 16, 16)
+		background-position: 4px 4px
+		
+@each $icon in email, rss, skype, icq, phone
+	._#{$icon}
+		+svg($icon, 18, 18)
+		background-position: 3px 3px
+
+@each $icon in news, note, job, meet, info, chat
+	._#{$icon}
+		+svg($icon, 16, 16)
+		padding-left: 25px
+		height: 20px
+
+._contact
+	+svg(contact, 18, 18)
+	padding-left: 25px
+	height: 20px
+._forum
+	+svg(forum, 20, 20)
+	padding-left: 25px
+	height: 20px
+	background-position: -1px -1px
+

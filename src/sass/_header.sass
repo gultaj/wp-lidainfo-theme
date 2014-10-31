@@ -37,12 +37,14 @@
 				background: $base
 				a
 					color: #fff
-.header__nav_category
+.header__nav_extend
 	@extend %clear, %cond
 	padding-top: 6px
-	ul
+	.nav_inline_category
+		@extend %nav
 		height: 30px
 		float: left
+		padding-top: 3px
 		li
 			padding: 0 5px
 			&:first-child
@@ -59,26 +61,29 @@
 	margin-right: 20px
 	
 	.input_search
-		width: 0px
-		border-bottom: 1px solid #aebac8
-		padding-top: 4px
+		width: 200px
+		border-bottom: 1px solid #fff
+		padding: 4px 0 1px
 		vertical-align: top
 		-webkit-transition: width .2s
-		transition: width .2s
+		transition: color, border-color .2s
+		color: white
 		&:hover,&:focus
-			width: 150px
+			border-color: #aebac8
+			color: #000
 	&:hover>.input_search
-		width: 150px
+		border-color: #aebac8
+		color: #000
 
-.icon
-	@extend %icon
-	@each $icon in search
-		&._#{$icon}
-			+ss($icon, $icons_map)
+// .icon
+// 	@extend %icon
+// 	@each $icon in search
+// 		&._#{$icon}
+// 			// +ss($icon, $icons_map)
 
 
 .subscribe
-	@extend %icon
+	// @extend %icon
 	background-color: #aebac8
 	-webkit-transition: background-color .2s
 	transition: background-color .2s
@@ -86,6 +91,6 @@
 	margin-right: 2px
 	&:hover
 		background-color: $base
-	@each $icon in tw, fb, email, rss, vk
-		&._#{$icon}
-			+ss($icon, $icons_map)
+	// @each $icon in tw, fb, email, rss, vk
+	// 	&._#{$icon}
+	// 		+ss($icon, $icons_map)

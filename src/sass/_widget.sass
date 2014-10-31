@@ -6,11 +6,14 @@
 	h3
 		font-size: 13px
 		color: black
-		font-weight: 500
+		// font-weight: 500
+		border-left: 1px solid rgba($hover, .5)
+		padding-left: 5px
 		&:hover
 			color: $hover
 	.notice__category
 		@extend %notice
+		padding-left: 6px
 	.notice__date
 		@extend %notice
 		float: right
@@ -19,9 +22,12 @@
 	.widget__title
 		float: left
 		font-size: 18px
+		padding-bottom: 2px
 .widget__link_all
 	float: right
 	font-size: 14px
+	padding-top: 2px
+	margin-bottom: -2px
 	color: $base
 	&:hover
 		color: $hover
@@ -31,25 +37,59 @@
 	&:first-child
 		margin-top: 0
 
-@each $icon in news, notes, bus
-	._#{$icon}
-		+ss($icon, $icons_map)
 
-._bus
-	vertical-align: top
-	margin-top: -2px
-._news
-	background: url('../img/icons/news.svg') no-repeat 0 0
-	+background-size(20px 20px)
-	// background-image: inline-image('svg/#{$name}.svg','image/svg')
-	width: 20px
-	height: 20px
-	display: inline-block
-	color: $base
-._bus
-	background: url('../img/icons/bus.svg') no-repeat 0 0
-	+background-size(20px 20px)
-	width: 20px
-	height: 20px
-	display: inline-block
-	fill: $base
+
+.widget__nav
+	li
+		margin-bottom: 3px
+		a
+			color: #000
+			font-weight: 600
+			font-size: 13px
+			&:hover
+				color: $hover
+.keywords
+	a
+		color: #000
+		&:hover
+			color: $hover
+.recent__comments
+	.comment
+		display: block
+		border-left: 1px solid $hover
+		padding-left: 5px
+		margin-bottom: 5px
+		color: $base
+		&:hover
+			color: $hover
+		font-size: 13px
+		.author
+			color: #000
+			font-weight: 600
+
+.recent__topics
+	color: #000
+	font-size: 13px
+	a
+		color: $base
+		font-size: 13px
+
+		&:hover
+			color: $hover
+
+.afisha
+	margin-bottom: 20px
+	.afisha__event
+		&:hover
+			background-color: #eee
+	.event__body
+		color: #000
+		font-size: 11px
+		overflow: overlay
+		line-height: normal
+	.event__title
+		font-size: 11px
+
+	.event__poster
+		@extend %media
+		height: 130px

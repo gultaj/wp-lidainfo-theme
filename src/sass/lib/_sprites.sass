@@ -23,12 +23,15 @@
 
 // insert svg
 =svg($name, $width, $height)
-    background: url('../img/svg/#{$name}.svg') no-repeat 0 0
-    +background-size(#{$width}px #{$height}px)
-    // background-image: inline-image('svg/#{$name}.svg','image/svg')
+    background-image: inline-image('icons/svg/#{$name}.svg','image/svg+xml')
+    background-size: #{$width}px #{$height}px
+    background-repeat: no-repeat
+
+=svg-s($name, $width, $height)
+    +svg($name, $width, $height)
     width: #{$width}px
     height: #{$height}px
-    display: inline-block
+
 
 =ss($sprite, $map: $icons)
     +si($sprite, $map)

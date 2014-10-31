@@ -1,0 +1,46 @@
+.footer
+	background-color: #4D4948
+	color: #fff
+	padding: 20px
+.footer__logo
+	+s(logo-footer, $logo_map)
+	+si(logo-footer, $logo_map)
+	display: block
+	width: auto
+	color: $l_gray
+	padding-top: 28px
+	font-size: 9px
+	margin-bottom: 50px
+.footer__info
+	padding: 20px 10px 10px 0
+	border-right: 1px solid $l_gray
+
+.nav_inline_map
+	margin: 0 -5px
+	line-height: 15px
+	.item
+		display: inline-block
+		vertical-align: top
+		padding-left: 5px
+		padding-right: 5px
+		&>a
+			color: #fff
+			font-size: 11px
+			text-transform: uppercase
+			&:hover
+				color: $base
+	.nav_child
+		padding-top: 3px
+	.sub-item
+		a
+			color: $l_gray
+			font-size: 10px
+			display: block
+			&:hover
+				background-color: $base
+				color: #fff
+.contact 
+	padding-left: 30px
+	height: 25px
+	line-height: 25px
+	font-size: 13px

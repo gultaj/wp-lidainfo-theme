@@ -67,26 +67,7 @@ module.exports = function(grunt) {
                 src: ['*.svg'],
                 dest: 'src/img/icons/svg',
             }
-        },
-        svg_modify: {
-        	change: {
-        		// cwd: 'src/img/icons/',
-        		src: 'src/img/icons/svg/',
-        		dest: 'src/img/icons/mod/'
-        	}
-        },
-
-        svgzr: {
-	        dist: {
-	            options: {
-	                files: {
-	                    cwdSvg: 'src/img/icons/mod/undefined',
-	                    cwdPng: "src/img/icons/png"
-	                },
-	                png: true
-	            }
-	        }
-	    }
+        }
 	});
 
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
