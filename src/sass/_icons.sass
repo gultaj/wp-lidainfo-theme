@@ -25,12 +25,12 @@
 	width: 24px
 	height: 24px
 
-@each $icon in tw, fb, vk
+@each $icon in tw, fb, vk, icq, phone
 	._#{$icon}
 		+svg($icon, 16, 16)
 		background-position: 4px 4px
 		
-@each $icon in email, rss, skype, icq, phone
+@each $icon in email, rss
 	._#{$icon}
 		+svg($icon, 18, 18)
 		background-position: 3px 3px
@@ -50,4 +50,12 @@
 	padding-left: 25px
 	height: 20px
 	background-position: -1px -1px
+
+._skype
+	+svg(skype, 20, 20)
+	background-position: 2px 2px
+
+._email-b
+	+svg(email-blue, 18, 18)
+	background-position: 3px 3px	
 

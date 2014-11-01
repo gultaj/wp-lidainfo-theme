@@ -4,11 +4,9 @@
 
 .section__title
 	@extend %title
-
-
+	padding-bottom: 2px
 .entry__link_thumb
 	@extend %media
-
 .entry__title
 	.entry__link
 		@extend %bold
@@ -87,12 +85,9 @@
 		&:hover
 			background-color: $base
 
-// .entry__link_comment
-// 	@extend %icon
-// 	+ss(message, $icons_map)
-// 	vertical-align: middle
-// 	text-align: center
-// 	line-height: 15px
-// 	font-size: 10px
-// 	color: white
-// 	margin-left: 5px
+.entry__link_top
+	display: block
+	height: 200px
+	overflow: hidden
+	img
+		width: 100%

@@ -1,7 +1,10 @@
 .footer
 	background-color: #4D4948
 	color: #fff
-	padding: 20px
+	// padding: 20px
+	.in
+		margin: 0 auto !important
+		padding: 20px
 .footer__logo
 	+s(logo-footer, $logo_map)
 	+si(logo-footer, $logo_map)
@@ -10,9 +13,9 @@
 	color: $l_gray
 	padding-top: 28px
 	font-size: 9px
-	margin-bottom: 50px
+	margin-bottom: 30px
 .footer__info
-	padding: 20px 10px 10px 0
+	padding: 0 10px 10px 0
 	border-right: 1px solid $l_gray
 
 .nav_inline_map
@@ -21,8 +24,7 @@
 	.item
 		display: inline-block
 		vertical-align: top
-		padding-left: 5px
-		padding-right: 5px
+		padding-right: 0 !important
 		&>a
 			color: #fff
 			font-size: 11px
@@ -43,4 +45,11 @@
 	padding-left: 30px
 	height: 25px
 	line-height: 25px
-	font-size: 13px
+	font-size: 12px
+	color: $l_gray
+.footer__social
+	margin: 20px 0 0
+.social
+	@extend .subscribe
+	background-color: #818181
+	margin-right: 10px
